@@ -1,6 +1,6 @@
 data segment
    a dw 0005H
-   b dd ?
+   c dd ?
 data ends
 code segment
 assume cs:code, ds:data
