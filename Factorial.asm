@@ -12,7 +12,7 @@ start:
    L1:dec a
       mul a
       mov cx, a
-      mov cx, 01
+      cmp cx, 01
       jnz L1
       mov word ptr c, ax
       mov word ptr c+2, ax
