@@ -13,7 +13,7 @@ start:
    L2:mov al, [si]
       inc si
       cmp al, [si]
-      jbe L3
+      jbe L3      //in descending, change jbe to jae
       xchg al, [si]
       mov [si-1], al
    L3:dec cl
