@@ -11,10 +11,10 @@ void main(void)   {
 }
 
 void TOM1Delay(void)   {
-   TMOD=0x01;
-   TLO=0xFD;
+   TMOD=0x01;      //Timer Mode Control register
+   TLO=0xFD;       //timer low byte
    TLO=0x4B;
-   TRO=1;
+   TRO=1;          //
    while(TFO==1);
    TRO=0;
    TFO=0;
