@@ -1,4 +1,3 @@
-//toggle P1.5 continuously every 50ms
 
 #include <reg51.h>
 
