@@ -7,12 +7,12 @@ assume cs:code, ds:data
 start:
    mov ax, data
    mov ds, ax
-   mov es, ax           //load data of ax to es - extra segment register
-   lea si, a            //load effective address of 'a' to source index register
-   lea di, b            //load effective address of 'b' to destination index register
-   cld                  //clear flag
+   mov es, ax           ;load data of ax to es - extra segment register
+   lea si, a            ;load effective address of 'a' to source index register
+   lea di, b            ;load effective address of 'b' to destination index register
+   cld                  ;clear flag
    mov cx, 06
-   REP movsb            //repeat
+   REP movsb            ;repeat
    int 3
 code ends
 end start
